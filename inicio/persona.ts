@@ -1,5 +1,5 @@
 function mostrarPersona(nombre: string, apellido: string) {
-  return 'hola ' + nombre + ' ' + apellido;
+  return 'usuario: ' + nombre + ' ' + apellido;
 }
 
 let usuario = mostrarPersona('joquin', 'zambada');
