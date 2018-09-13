@@ -1,17 +1,17 @@
 class Animal {
-  mover(distancia: number = 0) {
-    console.log(`distancia recorrida en metros ${distancia}m`);
+  mover(distancia: number) {
+    console.log(`el animal se mueve a una distancia de ${distancia}m`);
   }
 }
 
-
 class Perro extends Animal {
   ladrar() {
-    console.log('woff woff!');
+    console.log('woof woof!');
   }
 }
 
 let chihuahua = new Perro();
+
 chihuahua.ladrar();
-chihuahua.mover(5);
+chihuahua.mover(50);
 chihuahua.ladrar();

@@ -1,7 +1,7 @@
-function mostrarPersona(nombre: string, apellido: string) {
-  return 'usuario: ' + nombre + ' ' + apellido;
+function getPersona(nombre: string, apellido: string): string {
+  return 'Persona:' + nombre + ' ' + apellido;
 }
 
-let usuario = mostrarPersona('joquin', 'zambada');
+let persona = getPersona('joaquin', 'none');
 
-document.body.innerHTML = usuario;
+console.log(persona);

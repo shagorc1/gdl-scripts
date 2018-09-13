@@ -3,10 +3,10 @@ class Persona {
   constructor(name: string) {
     this.nombre = name;
   }
-  nombreCompleto() {
-    return 'Persona:' + this.nombre;
+  nombreCompleto(): string {
+    return 'Juan ' + this.nombre;
   }
 }
-let jose = new Persona('jose jose');
 
-document.body.innerHTML = jose.nombreCompleto();
+let persona = new Persona('Perez');
+console.log(persona.nombreCompleto());

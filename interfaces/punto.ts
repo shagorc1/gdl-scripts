@@ -4,5 +4,6 @@ interface Punto {
   readonly y: number
 };
 
-let p1: Punto = { x: 10, y: 10 };
-p1.x = 5;
+let punto: Punto = { x: 100, y: 100 };
+
+punto.x = 50;

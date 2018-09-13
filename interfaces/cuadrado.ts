@@ -1,9 +1,10 @@
-interface cuadradoConf {
+interface configCuadro {
   color: string,
   width?: number
 };
 
-function crearCuadrado(config: cuadradoConf): { color: string, area: number} {
+
+function crearCuadrado(config: configCuadro): { color: string, area: number} {
   let nuevo = { color: 'white', area: 100 };
   if(config.color) {
     nuevo.color = config.color;
@@ -14,6 +15,6 @@ function crearCuadrado(config: cuadradoConf): { color: string, area: number} {
   return nuevo;
 }
 
-let miCuadrado = crearCuadrado({color: 'rojo'});
+let cuadrado = crearCuadrado({ color:'rojo'});
 
-console.log(miCuadrado);
+console.log(cuadrado);
